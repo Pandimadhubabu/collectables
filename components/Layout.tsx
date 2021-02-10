@@ -28,8 +28,9 @@ const Layout = ({ children, title = 'Collectables' }: Props) => (
               aria-label="Show mobile menu"
               className="sm:hidden cursor-pointer"
               id="menu-button"
+              type="button"
             >
-              <i aria-hidden="true" className="fas fa-bars" />
+              Open
             </button>
 
             <nav
@@ -60,11 +61,10 @@ const Layout = ({ children, title = 'Collectables' }: Props) => (
                   <a href="/api/users">Users API</a>
                 </li>
                 <li className="mt-2 pt-4 border-t-2 md:mt-0 md:pt-0 md:border-t-0">
-                  <Link
-                    className="open-dialog text-gray-700 text-sm font-semibold border px-4 py-2 rounded-lg hover:text-purple-800 hover:border-purple-600"
-                    href="/about"
-                  >
-                    About
+                  <Link href="/about">
+                    <span className="open-dialog text-gray-700 text-sm font-semibold border px-4 py-2 rounded-lg hover:text-purple-800 hover:border-purple-600">
+                      About
+                    </span>
                   </Link>
                 </li>
               </ul>
