@@ -20,8 +20,12 @@ const Layout = ({ children, title = 'Collectables' }: Props) => (
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4 flex-wrap">
             <h1 className="text-2xl text-gray-900 tracking-wide uppercase">
-              <i aria-hidden="true" className="fab fa-apple mr-2" />
-              Collectables
+              <Link href="/">
+                <>
+                  <i aria-hidden="true" className="fab fa-apple mr-2" />
+                  Collectables
+                </>
+              </Link>
             </h1>
 
             <button
@@ -40,25 +44,18 @@ const Layout = ({ children, title = 'Collectables' }: Props) => (
             >
               <ul className="flex flex-col md:flex-row md:flex-grow">
                 <li className="md:mx-2">
-                  <a
-                    className="computers-button underline text-purple-800 text-sm font-semibold hover:text-purple-800 mb-1"
-                    data-collection="computers"
-                    href="?collection=computers"
-                  >
-                    Computers
-                  </a>
+                  <Link href="/collectables">
+                    <span className="underline text-purple-800 text-sm font-semibold hover:text-purple-800 mb-1">
+                      All
+                    </span>
+                  </Link>
                 </li>
                 <li className="md:mx-2 flex-grow">
-                  <a
-                    className="idevices-button underline text-gray-700 text-sm font-semibold hover:text-purple-800 mb-1"
-                    data-collection="iDevices"
-                    href="?collection=devices"
-                  >
-                    iDevices
-                  </a>
-                  <Link href="/">Collectables</Link>
-                  <Link href="/users">Users List</Link>
-                  <a href="/api/users">Users API</a>
+                  <Link href="/users">
+                    <span className="underline text-purple-800 text-sm font-semibold hover:text-purple-800 mb-1">
+                      Users
+                    </span>
+                  </Link>
                 </li>
                 <li className="mt-2 pt-4 border-t-2 md:mt-0 md:pt-0 md:border-t-0">
                   <Link href="/about">
@@ -73,7 +70,7 @@ const Layout = ({ children, title = 'Collectables' }: Props) => (
         </div>
       </div>
     </header>
-    {children}
+    <main className="pt-8">{children}</main>
   </div>
 );
 
