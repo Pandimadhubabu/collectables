@@ -1,5 +1,4 @@
 import { useQuery } from '@apollo/client';
-import Link from 'next/link';
 import { ALL_COLLECTABLES_QUERY } from '../queries';
 
 export default function Collectables() {
@@ -12,8 +11,8 @@ export default function Collectables() {
 
   return (
     <span>
-      {collectables.map((collectable) => (
-        <div>{collectable.name}</div>
+      {collectables.map((collectable: any) => (
+        <div key="collectable.id">{collectable.name}</div>
       ))}
     </span>
   );

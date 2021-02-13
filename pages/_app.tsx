@@ -1,7 +1,10 @@
+import { FC } from 'react';
+import { AppProps } from 'next/app';
 import { ApolloProvider } from '@apollo/client';
 import { useApollo } from '../lib/apolloClient';
 
-export default function App({ Component, pageProps }) {
+/* eslint-disable react/prop-types */
+const App: FC<AppProps> = ({ Component, pageProps }) => {
   const apolloClient = useApollo(pageProps.initialApolloState);
 
   return (
@@ -9,4 +12,6 @@ export default function App({ Component, pageProps }) {
       <Component {...pageProps} />
     </ApolloProvider>
   );
-}
+};
+
+export default App;
