@@ -50,13 +50,6 @@ const Layout = ({ children, title = 'Collectables' }: Props) => (
                     </span>
                   </Link>
                 </li>
-                <li className="md:mx-2 flex-grow">
-                  <Link href="/users">
-                    <span className="underline text-purple-800 text-sm font-semibold hover:text-purple-800 mb-1">
-                      Users
-                    </span>
-                  </Link>
-                </li>
                 <li className="mt-2 pt-4 border-t-2 md:mt-0 md:pt-0 md:border-t-0">
                   <Link href="/about">
                     <span className="open-dialog text-gray-700 text-sm font-semibold border px-4 py-2 rounded-lg hover:text-purple-800 hover:border-purple-600">
