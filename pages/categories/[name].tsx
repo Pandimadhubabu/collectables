@@ -6,7 +6,7 @@ import Layout from '../../components/Layout';
 import Collectables from '../../components/Collectables';
 
 type Props = {
-  items?: Collectable[];
+  items: Collectable[];
   categoryName: string;
   errors?: string;
 };
