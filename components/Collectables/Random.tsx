@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { MdArrowForward } from 'react-icons/md';
 import { Collectable } from '../../interfaces';
 
 type Props = {
@@ -7,14 +8,14 @@ type Props = {
 
 const Random = ({ collectable }: Props) => {
   return (
-    <section className="bg-gray-100">
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-gray-100">
+    <section className="bg-gradient-to-b from-gray-50 to-gray-100">
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
           <div className="relative lg:w-1/2">
             <img
-              alt="Random collectable"
+              alt={collectable.name}
               className="object-cover w-full lg:absolute h-80 lg:h-full"
-              src="https://collection.leonardofaria.net/images/macintosh-plus.jpg"
+              src={collectable.photo}
             />
             <svg
               className="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
@@ -33,28 +34,12 @@ const Random = ({ collectable }: Props) => {
             <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
               {collectable.name}
             </h5>
-            <p className="mb-5 text-gray-800">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-              corrupti voluptatem et, sunt, adipisci libero commodi ratione
-              iusto rerum dicta quisquam maxime ducimus! Blanditiis tenetur ea
-              rem expedita culpa doloremque.
-            </p>
+            <p className="mb-5 text-gray-800">{collectable.notes}</p>
             <div className="flex items-center">
-              <Link href="/about">
-                <span className="inline-flex items-center justify-center w-full mb-2 sm:w-auto sm:mb-0 px-3 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent leading-6 rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+              <Link href={`/collectables/${collectable.id}`}>
+                <span className="inline-flex items-center justify-center w-full mb-2 sm:w-auto sm:mb-0 px-3 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent leading-6 rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-3 md:text-lg md:px-6">
                   Get Started
-                  <svg
-                    className="w-4 h-4 ml-1"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      clipRule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      fillRule="evenodd"
-                    />
-                  </svg>
+                  <MdArrowForward className="text-white w-5 h-5 ml-2" />
                 </span>
               </Link>
             </div>

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import 'tailwindcss/tailwind.css';
 
 import Footer from './Footer';
-import Nav from './Nav';
+import Nav from './Header';
 
 type Props = {
   children?: ReactNode;
@@ -18,10 +18,10 @@ const Layout = ({ children, title = 'Collectables' }: Props) => (
       <meta content="initial-scale=1.0, width=device-width" name="viewport" />
     </Head>
 
-    <div className="h-screen flex-1 overflow-auto">
+    <div className="h-screen flex flex-col overflow-auto">
       <Nav />
 
-      <div className="pt-6">{children}</div>
+      <main className="flex-grow">{children}</main>
 
       <Footer />
     </div>

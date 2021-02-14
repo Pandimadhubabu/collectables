@@ -12,14 +12,25 @@ type Props = {
 };
 
 const WithStaticProps = ({ items }: Props) => {
-  const randomHeroImage = items[Math.floor(Math.random() * items.length)];
-  const randomCollectable = items[Math.floor(Math.random() * items.length)];
+  const itemsWithPhoto = items.filter(
+    (item) => !item.photo.includes('not-found.jpeg'),
+  );
+  const randomHeroImage =
+    itemsWithPhoto[Math.floor(Math.random() * itemsWithPhoto.length)];
+  const randomCollectable =
+    itemsWithPhoto[Math.floor(Math.random() * itemsWithPhoto.length)];
+  const computersTotal = items.filter(
+    (collectable) => collectable.category.name === 'computer',
+  ).length;
+  const iDevicesTotal = items.filter(
+    (collectable) => collectable.category.name === 'idevice',
+  ).length;
 
   return (
     <Layout title="Collectables">
       <Hero photo={randomHeroImage.photo} />
 
-      <Counter computersTotal={20} iDevicesTotal={20} />
+      <Counter computersTotal={computersTotal} iDevicesTotal={iDevicesTotal} />
 
       <Random collectable={randomCollectable} />
     </Layout>

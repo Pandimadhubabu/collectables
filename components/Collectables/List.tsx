@@ -6,13 +6,13 @@ type Props = {
 };
 
 const List = ({ items }: Props) => (
-  <ul>
+  <>
     {items.map((item) => (
-      <li key={item.id}>
-        <ListItem data={item} />
-      </li>
+      <div className="grid grid-cols-2 gap-4" key={item.id}>
+        <ListItem collectable={item} />
+      </div>
     ))}
-  </ul>
+  </>
 );
 
 export default List;
