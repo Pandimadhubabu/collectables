@@ -8,7 +8,7 @@ type Props = {
 const List = ({ items }: Props) => (
   <>
     {items.map((item) => (
-      <div className="grid grid-cols-2 gap-4" key={item.id}>
+      <div className="" key={item.id}>
         <ListItem collectable={item} />
       </div>
     ))}

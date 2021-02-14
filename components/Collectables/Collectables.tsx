@@ -7,22 +7,17 @@ type Props = {
 };
 
 const Collectables = ({ items, categoryName }: Props) => (
-  <section className="lg:pt-20">
-    <div className="mx-auto container mb-16">
-      <h1 className="text-4xl font-extrabold">
+  <section>
+    <header className="max-w-lg lg:max-w-4xl mx-auto my-20">
+      <h1 className="text-4xl font-extrabold px-4 md:px-0">
         {categoryName || 'All collectables'}
       </h1>
-    </div>
+    </header>
 
     <div className="bg-gradient-to-b from-gray-50 to-gray-100 py-20">
-      <div className="mx-auto container flex flex-wrap overflow-hidden">
+      <div className="max-w-lg lg:max-w-4xl mx-auto flex flex-wrap overflow-hidden">
         {items.map((item) => (
-          <div
-            className="w-full overflow-hidden sm:my-2 sm:px-2 sm:w-1/2"
-            key={item.id}
-          >
-            <ListItem collectable={item} />
-          </div>
+          <ListItem collectable={item} key={item.id} />
         ))}
       </div>
     </div>

@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import { MdArrowForward } from 'react-icons/md';
+import Button from '../Button';
+
 import { Collectable } from '../../interfaces';
 
 type Props = {
@@ -36,12 +37,13 @@ const Random = ({ collectable }: Props) => {
             </h5>
             <p className="mb-5 text-gray-800">{collectable.notes}</p>
             <div className="flex items-center">
-              <Link href={`/collectables/${collectable.id}`}>
-                <span className="inline-flex items-center justify-center w-full mb-2 sm:w-auto sm:mb-0 px-3 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent leading-6 rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-3 md:text-lg md:px-6">
-                  Get Started
-                  <MdArrowForward className="text-white w-5 h-5 ml-2" />
-                </span>
-              </Link>
+              <Button
+                href={`/collectables/${collectable.id}`}
+                Icon={MdArrowForward}
+                size="large"
+              >
+                Read more
+              </Button>
             </div>
           </div>
         </div>

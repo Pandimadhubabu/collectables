@@ -8,31 +8,21 @@ type Props = {
 };
 
 const ListItem = ({ collectable }: Props) => (
-  <div className="">
-    <div className="flex flex-col overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
-      <div className="lg:w-1/2">
-        <img
-          alt={collectable.name}
-          className="object-cover w-full h-80 lg:h-full"
-          src={collectable.photo}
-        />
-      </div>
-      <div className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
-        <div>
-          <p className="inline-block py-px mb-4 text-xs font-semibold tracking-wider uppercase rounded-full">
-            <Link
-              as={`/collectables/${collectable.id}`}
-              href="/collectables/[id]"
-            >
-              Random collectable
-            </Link>
-          </p>
-        </div>
-        <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
+  <div className="w-full flex flex-col overflow-hidden bg-white border rounded shadow-sm md:flex-row sm:mx-auto mb-6">
+    <div className="md:w-1/4">
+      <img
+        alt={collectable.name}
+        className="object-cover w-full h-80 md:h-full"
+        src={collectable.photo}
+      />
+    </div>
+    <div className="flex flex-col justify-center p-8 bg-white md:pl-10 md:w-3/4">
+      <h3 className="mb-3 text-xl font-extrabold leading-none sm:text-2xl">
+        <Link as={`/collectables/${collectable.id}`} href="/collectables/[id]">
           {collectable.name}
-        </h5>
-        <p className="mb-5 text-gray-800">{collectable.notes}</p>
-      </div>
+        </Link>
+      </h3>
+      <p className="mb-5 text-gray-800">{collectable.notes}</p>
     </div>
   </div>
 );
