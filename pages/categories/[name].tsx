@@ -1,16 +1,17 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 
 import { Collectable } from '../../interfaces';
-import { collectables } from '../../utils/sample-data';
+import { categories, collectables } from '../../utils/sample-data';
 import Layout from '../../components/Layout';
-import Single from '../../components/Collectables/Single';
+import Collectables from '../../components/Collectables/Collectables';
 
 type Props = {
-  item?: Collectable;
+  items?: Collectable[];
+  categoryName: string;
   errors?: string;
 };
 
-const StaticPropsDetail = ({ item, errors }: Props) => {
+const StaticPropsDetail = ({ items, categoryName, errors }: Props) => {
   if (errors) {
     return (
       <Layout title="Error | Next.js + TypeScript Example">
@@ -22,8 +23,8 @@ const StaticPropsDetail = ({ item, errors }: Props) => {
   }
 
   return (
-    <Layout title={`${item ? item.name : ' - Collectables'}`}>
-      {item && <Single item={item} />}
+    <Layout title="Collectables list">
+      <Collectables categoryName={categoryName} items={items} />
     </Layout>
   );
 };
@@ -32,8 +33,8 @@ export default StaticPropsDetail;
 
 export const getStaticPaths: GetStaticPaths = async () => {
   // Get the paths we want to pre-render based on users
-  const paths = collectables.map((collectable) => ({
-    params: { id: collectable.id.toString() },
+  const paths = categories.map((category) => ({
+    params: { name: category.name },
   }));
 
   // We'll pre-render only these paths at build time.
@@ -46,11 +47,13 @@ export const getStaticPaths: GetStaticPaths = async () => {
 // direct database queries.
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
-    const id = params?.id;
-    const item = collectables.find((data) => data.id === Number(id));
+    const name = params?.name;
+    const items: Collectable[] = collectables.filter(
+      (data) => data.category.name === name,
+    );
     // By returning { props: item }, the StaticPropsDetail component
     // will receive `item` as a prop at build time
-    return { props: { item } };
+    return { props: { items, categoryName: name } };
   } catch (err) {
     return { props: { errors: err.message } };
   }

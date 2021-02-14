@@ -3,7 +3,7 @@ import { GetStaticProps } from 'next';
 import { Collectable } from '../../interfaces';
 import { collectables } from '../../utils/sample-data';
 import Layout from '../../components/Layout';
-import List from '../../components/collectables/List';
+import Collectables from '../../components/Collectables/Collectables';
 
 type Props = {
   items: Collectable[];
@@ -11,7 +11,7 @@ type Props = {
 
 const WithStaticProps = ({ items }: Props) => (
   <Layout title="Collectables list">
-    <List items={items} />
+    <Collectables items={items} />
   </Layout>
 );
 

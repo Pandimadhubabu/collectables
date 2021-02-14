@@ -1,14 +1,18 @@
-export type Collectable = {
+export type Category = {
   id: number;
   name: string;
-  serial: string;
-  price: number;
+};
+
+export type Collectable = {
+  category: Category;
+  id: number;
+  name: string;
   boughtAt: string;
   hardware: string;
   photo: string;
   reference: string;
-  minimumOs: string;
-  currentOs: string;
-  maximumOs: string;
+  minimumOs?: string;
+  currentOs?: string;
+  maximumOs?: string;
   notes: string;
 };
