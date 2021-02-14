@@ -11,14 +11,14 @@ type Props = {
 
 const ListItem = ({ collectable }: Props) => (
   <div className="w-full flex flex-col overflow-hidden bg-white border rounded shadow-sm md:flex-row sm:mx-auto mb-10">
-    <div className="md:w-1/4">
+    <div className="w-full sm:w-80 md:w-96">
       <img
         alt={collectable.name}
-        className="object-cover w-full h-80 md:h-full"
+        className="aspect-w-16 aspect-h-9"
         src={collectable.photo}
       />
     </div>
-    <div className="flex flex-col justify-center md:w-3/4 px-3 pt-3">
+    <div className="flex flex-col justify-center px-3 pt-3">
       <h3 className="mb-2 text-2xl font-extrabold leading-none sm:text-2xl">
         <Link as={`/collectables/${collectable.id}`} href="/collectables/[id]">
           {collectable.name}

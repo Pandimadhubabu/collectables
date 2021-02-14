@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.3.9",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindui/react": "^0.1.1",
     "autoprefixer": "^10.2.4",
     "graphql": "^15.5.0",
