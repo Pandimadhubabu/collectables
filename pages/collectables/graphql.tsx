@@ -3,7 +3,7 @@ import { initializeApollo } from '../../lib/apolloClient';
 
 import { ALL_COLLECTABLES_QUERY } from '../../queries';
 import Layout from '../../components/Layout';
-import Collectables from '../../components/Collectables';
+import { ApiCollectables } from '../../components/Collectables';
 
 // TODO: implement this page with GraphQL data from Hasura
 
@@ -16,7 +16,7 @@ const WithStaticProps = ({ items }: any) => {
       <p>
         Example fetching data from inside <code>getStaticProps()</code>.
       </p>
-      <Collectables />
+      <ApiCollectables />
     </Layout>
   );
 };

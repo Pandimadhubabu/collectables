@@ -1,6 +1,7 @@
 import { useQuery } from '@apollo/client';
-import { ALL_COLLECTABLES_QUERY } from '../queries';
+import { ALL_COLLECTABLES_QUERY } from '../../queries';
 
+/* Component using Hasura instead of local JSON */
 export default function Collectables() {
   const { loading, error, data } = useQuery(ALL_COLLECTABLES_QUERY);
 

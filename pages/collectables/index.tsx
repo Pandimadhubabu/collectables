@@ -3,7 +3,7 @@ import { GetStaticProps } from 'next';
 import { Collectable } from '../../interfaces';
 import { collectables } from '../../utils/sample-data';
 import Layout from '../../components/Layout';
-import Collectables from '../../components/Collectables/Collectables';
+import Collectables from '../../components/Collectables';
 
 type Props = {
   items: Collectable[];
