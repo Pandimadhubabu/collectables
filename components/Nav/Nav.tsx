@@ -24,11 +24,6 @@ const Nav = () => (
         >
           <ul className="flex flex-col md:flex-row md:flex-grow">
             <li className="md:mx-2">
-              <Link href="/collectables">
-                <span className="underline text-purple-800 text-sm font-semibold hover:text-purple-800 mb-1">
-                  All
-                </span>
-              </Link>
               <Link href="/categories/computer">
                 <span className="underline text-purple-800 text-sm font-semibold hover:text-purple-800 mb-1">
                   Computers

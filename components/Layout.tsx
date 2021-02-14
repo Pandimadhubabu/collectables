@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import Head from 'next/head';
 import 'tailwindcss/tailwind.css';
 
+import Footer from './Footer';
 import Nav from './Nav';
 
 type Props = {
@@ -21,6 +22,8 @@ const Layout = ({ children, title = 'Collectables' }: Props) => (
       <Nav />
 
       <div className="pt-6">{children}</div>
+
+      <Footer />
     </div>
   </>
 );

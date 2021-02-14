@@ -1,25 +1,11 @@
-import { gql, useQuery } from '@apollo/client';
 import Link from 'next/link';
+import { Collectable } from '../../interfaces';
 
-export const ALL_QUERY = gql`
-  query all {
-    collectables {
-      id
-      name
-    }
-  }
-`;
+type Props = {
+  collectable: Collectable;
+};
 
-export default function Random() {
-  const { loading, error, data } = useQuery(ALL_QUERY);
-
-  if (error) return <span>Error</span>;
-  if (loading) return <span>Loading</span>;
-
-  const { collectables } = data;
-  const randomCollectable =
-    collectables[Math.floor(Math.random() * collectables.length)];
-
+const Random = ({ collectable }: Props) => {
   return (
     <section className="bg-gray-100">
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-gray-100">
@@ -45,7 +31,7 @@ export default function Random() {
               </p>
             </div>
             <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
-              {randomCollectable.name}
+              {collectable.name}
             </h5>
             <p className="mb-5 text-gray-800">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
@@ -77,4 +63,6 @@ export default function Random() {
       </div>
     </section>
   );
-}
+};
+
+export default Random;

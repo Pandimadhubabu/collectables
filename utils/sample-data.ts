@@ -21,7 +21,7 @@ export const computers: Collectable[] = [
     name: 'Macintosh 512Ke',
     boughtAt: 'Jun 12, 2018',
     hardware: 'No info',
-    photo: 'images/macintosh-plus.jpg',
+    photo: 'https://collection.leonardofaria.net/images/macintosh-plus.jpg',
     reference: 'http://www.apple-history.com/512ke',
     minimumOs: '',
     currentOs: '',
@@ -38,7 +38,7 @@ export const computers: Collectable[] = [
     name: 'Power Mac G4 Cube',
     boughtAt: 'Mar 3, 2018',
     hardware: '450 MHz / 768 MB / 20 GB',
-    photo: 'images/g4-cube.jpg',
+    photo: 'https://collection.leonardofaria.net/images/g4-cube.jpg',
     reference:
       'https://everymac.com/systems/apple/powermac_g4/specs/powermac_g4_450_cube.html',
     minimumOs: '9.1',
@@ -56,7 +56,7 @@ export const computers: Collectable[] = [
     name: 'iBook G3',
     boughtAt: 'May 12, 2018',
     hardware: '300 MHz / 288 MB Ram / 20 GB',
-    photo: 'images/combo.jpg',
+    photo: 'https://collection.leonardofaria.net/images/combo.jpg',
     reference: 'https://everymac.com/systems/apple/ibook/specs/ibook.html',
     minimumOs: '8.6',
     currentOs: '',
@@ -73,7 +73,7 @@ export const computers: Collectable[] = [
     name: 'iMac G3 Bondi Blue',
     boughtAt: 'Unknown',
     hardware: '350 MHz / 192 MB Ram / 20 GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference: 'https://everymac.com/systems/apple/imac/specs/imac_350.html',
     minimumOs: '8.6',
     currentOs: '10.3.9',
@@ -90,7 +90,7 @@ export const computers: Collectable[] = [
     name: 'iMac G4',
     boughtAt: 'May 12, 2018',
     hardware: 'No info',
-    photo: 'images/combo.jpg',
+    photo: 'https://collection.leonardofaria.net/images/combo.jpg',
     reference:
       'https://everymac.com/systems/apple/imac/specs/imac_1.0_17_fp.html',
     minimumOs: '10.2.3',
@@ -108,7 +108,7 @@ export const computers: Collectable[] = [
     name: 'MacBook',
     boughtAt: 'Unknown',
     hardware: '2 GHz / 2GB / 120 GB',
-    photo: 'images/macbook-black.jpg',
+    photo: 'https://collection.leonardofaria.net/images/macbook-black.jpg',
     reference:
       'https://everymac.com/systems/apple/macbook/specs/macbook_2.0_black.html',
     minimumOs: '10.4.6',
@@ -126,7 +126,7 @@ export const computers: Collectable[] = [
     name: 'PowerBook G3',
     boughtAt: 'May 12, 2018',
     hardware: '500 MHz / 768 MB / 40 GB',
-    photo: 'images/combo.jpg',
+    photo: 'https://collection.leonardofaria.net/images/combo.jpg',
     reference:
       'https://everymac.com/systems/apple/powerbook_g3/specs/powerbook_g3_500_fw.html',
     minimumOs: '9.0.2',
@@ -144,7 +144,7 @@ export const computers: Collectable[] = [
     name: 'MacBook 17',
     boughtAt: 'Jul 7, 2019',
     hardware: '2.4 GHz / 6 GB / 160 GB',
-    photo: 'images/macbook-17.jpg',
+    photo: 'https://collection.leonardofaria.net/images/macbook-17.jpg',
     reference:
       'https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-2-duo-2.4-17-santa-rosa-specs.html',
     minimumOs: '10.4.9',
@@ -162,7 +162,7 @@ export const computers: Collectable[] = [
     name: 'iMac G3 DV',
     boughtAt: 'Aug 18, 2018',
     hardware: '500 MHz / 640 MB / 30 GB',
-    photo: 'images/imac-snow.jpg',
+    photo: 'https://collection.leonardofaria.net/images/imac-snow.jpg',
     reference:
       'https://everymac.com/systems/apple/imac/specs/imac_dv_se_500.html',
     minimumOs: '9.0.4',
@@ -180,7 +180,7 @@ export const computers: Collectable[] = [
     name: 'MacBook 15',
     boughtAt: 'Aug 19, 2019',
     hardware: 'No info',
-    photo: 'images/macbook-15.jpg',
+    photo: 'https://collection.leonardofaria.net/images/macbook-15.jpg',
     reference:
       'https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-2-duo-2.4-aluminum-15-late-2008-unibody-specs.html',
     minimumOs: '10.5.5',
@@ -198,7 +198,7 @@ export const computers: Collectable[] = [
     name: 'iBook G4',
     boughtAt: 'Sep 27, 2019',
     hardware: '1.42 GHz / 1 GB / 60 GB',
-    photo: 'images/ibook-g4.jpg',
+    photo: 'https://collection.leonardofaria.net/images/ibook-g4.jpg',
     reference:
       'https://everymac.com/systems/apple/ibook/specs/ibook_g4_1.42_14.html',
     minimumOs: '10.4.2',
@@ -215,7 +215,7 @@ export const computers: Collectable[] = [
     name: 'iBook G3',
     boughtAt: 'Sep 28, 2019',
     hardware: '600 MHz / 640 MB / 20 GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/ibook/specs/ibook_600_14.html',
     minimumOs: '9.2.1 & and 10.1.2',
@@ -233,7 +233,7 @@ export const computers: Collectable[] = [
     name: 'PowerBook G4 12"',
     boughtAt: 'Sep 29, 2019',
     hardware: '1.5 Ghz / 1.25 GB / 80 GB',
-    photo: 'images/powerbook-g4.jpg',
+    photo: 'https://collection.leonardofaria.net/images/powerbook-g4.jpg',
     reference:
       'https://everymac.com/systems/apple/powerbook_g4/specs/powerbook_g4_1.5_12.html',
     minimumOs: '10.3.7',
@@ -251,7 +251,7 @@ export const computers: Collectable[] = [
     name: 'Power Mac G5',
     boughtAt: 'Sep 28, 2019',
     hardware: '2.3 Ghz / 2 GB / 160 GB',
-    photo: 'images/powermac-g5.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/powermac-g5.jpeg',
     reference:
       'https://everymac.com/systems/apple/powermac_g5/specs/powermac_g5_dual_2.3.html',
     minimumOs: '10.4.2',
@@ -269,7 +269,7 @@ export const computers: Collectable[] = [
     name: 'Powerbook 145B',
     boughtAt: 'Dec 21, 2019',
     hardware: '25 MHz / 4 MB / 40 MB',
-    photo: 'images/powerbook-145b.jpg',
+    photo: 'https://collection.leonardofaria.net/images/powerbook-145b.jpg',
     reference:
       'https://everymac.com/systems/apple/powerbook/specs/mac_powerbook145.html',
     minimumOs: '7.0.1',
@@ -287,7 +287,7 @@ export const computers: Collectable[] = [
     name: 'Powerbook 1400cs',
     boughtAt: 'Dec 21, 2019',
     hardware: '32 MB',
-    photo: 'images/powerbook-1400cs.jpg',
+    photo: 'https://collection.leonardofaria.net/images/powerbook-1400cs.jpg',
     reference:
       'https://everymac.com/systems/apple/powerbook/specs/mac_powerbook1400cs_117.html',
     minimumOs: '7.5.3',
@@ -305,7 +305,7 @@ export const computers: Collectable[] = [
     name: 'MacBook Air',
     boughtAt: 'Mar 17, 2020',
     hardware: '1.6 Ghz / 2 GB / 80 GB',
-    photo: 'images/macbook-air.jpg',
+    photo: 'https://collection.leonardofaria.net/images/macbook-air.jpg',
     reference:
       'https://everymac.com/systems/apple/macbook-air/specs/macbook-air-core-2-duo-1.6-13-specs.html',
     minimumOs: '10.5.1',
@@ -323,7 +323,7 @@ export const computers: Collectable[] = [
     name: 'Macintosh Classic',
     boughtAt: 'Jul 80, 2020',
     hardware: '',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/mac_classic/specs/mac_classic.html',
     minimumOs: '6.0.7',
@@ -344,7 +344,7 @@ export const idevices: Collectable[] = [
     name: 'iPhone - First Generation',
     boughtAt: 'Jan 14, 2020',
     hardware: '8GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/iphone/specs/apple-iphone-specs.html',
     notes:
@@ -359,7 +359,7 @@ export const idevices: Collectable[] = [
     name: 'iPod - First Generation',
     boughtAt: 'Oct 26, 2019',
     hardware: '5GB',
-    photo: 'images/ipod-first-gen.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/ipod-first-gen.jpeg',
     reference: 'https://everymac.com/systems/apple/ipod/specs/ipod.html',
     notes: 'The OG iPod. Firewire only and totally functional.',
   },
@@ -372,7 +372,7 @@ export const idevices: Collectable[] = [
     name: 'iPod - Second Generation',
     boughtAt: 'Dec 9, 2019',
     hardware: '20GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference: 'https://everymac.com/systems/apple/ipod/specs/ipod_2ndgen.html',
     notes:
       "Got this iPod in North Van. The battery doesn't hold charge but it works fine connected to power",
@@ -386,7 +386,7 @@ export const idevices: Collectable[] = [
     name: 'iPod - Third Generation',
     boughtAt: 'Mar 9, 2019',
     hardware: '15GB',
-    photo: 'images/ipod-3rd.jpg',
+    photo: 'https://collection.leonardofaria.net/images/ipod-3rd.jpg',
     reference: 'https://everymac.com/systems/apple/ipod/specs/ipod_5threv.html',
     notes:
       'coconitID reports this device was built between May 17 2004 and May 23 2004. The fun fact of this one is its cable has 2 connections: USB and Firewire',
@@ -400,7 +400,7 @@ export const idevices: Collectable[] = [
     name: 'iPhone 3G',
     boughtAt: 'Aug 6, 2018',
     hardware: '8GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/iphone/specs/apple-iphone-3g-specs.html',
     notes:
@@ -415,7 +415,7 @@ export const idevices: Collectable[] = [
     name: 'iPad - First Generation',
     boughtAt: 'Mar 24, 2018',
     hardware: '32GB',
-    photo: 'images/ipad.jpg',
+    photo: 'https://collection.leonardofaria.net/images/ipad.jpg',
     reference:
       'https://everymac.com/systems/apple/ipad/specs/apple-ipad-original-specs.html',
     notes:
@@ -430,7 +430,7 @@ export const idevices: Collectable[] = [
     name: 'iPod Shuffle - 1st generation',
     boughtAt: 'Sep 21, 2006',
     hardware: '512MB',
-    photo: 'images/ipod-shuffle.jpg',
+    photo: 'https://collection.leonardofaria.net/images/ipod-shuffle.jpg',
     reference: 'http://www.apple-history.com/ipod_shuffle',
     notes:
       "This iPod was the first iPod I could afford. I tried to replace the battery by myself sometime in the past and it doesn't work anymore. Built around Jan 02 2006 - Jan 08 2006 (via coconutID)",
@@ -444,7 +444,7 @@ export const idevices: Collectable[] = [
     name: 'iPod Hi-Fi',
     boughtAt: 'May 20, 2019',
     hardware: '-',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference: 'https://en.wikipedia.org/wiki/IPod_Hi-Fi',
     notes:
       'I am always impressed by the quality of iPod Hi-Fi. Currently, it is connected to an Alexa device and used by play songs from Spotify.',
@@ -458,7 +458,7 @@ export const idevices: Collectable[] = [
     name: 'iPod Nano - 1st generation',
     boughtAt: 'Mar 21, 2018',
     hardware: '2GB',
-    photo: 'images/ipod-nano.jpg',
+    photo: 'https://collection.leonardofaria.net/images/ipod-nano.jpg',
     reference: 'http://www.apple-history.com/ipod_nano',
     notes:
       'The first generation of iPod Nanos got a battery recall - I had one replaced. This one I got in its box and it seems fine.',
@@ -472,7 +472,7 @@ export const idevices: Collectable[] = [
     name: 'iPhone 4',
     boughtAt: 'Jan 29, 2019',
     hardware: '8GB',
-    photo: 'images/iphone-4.jpg',
+    photo: 'https://collection.leonardofaria.net/images/iphone-4.jpg',
     reference: 'http://www.apple-history.com/ipod_touch',
     notes:
       'Bought from a mom selling many iPhone 4 (it seems she has many kids). It is running iOS 7.1.2',
@@ -486,7 +486,7 @@ export const idevices: Collectable[] = [
     name: 'iPhone Touch - 1st generation',
     boughtAt: 'Feb 9, 2019',
     hardware: '16GB',
-    photo: 'images/ipod-touch.jpg',
+    photo: 'https://collection.leonardofaria.net/images/ipod-touch.jpg',
     reference: 'http://www.apple-history.com/ipod_touch',
     notes: 'It runs iOS 2.2.1. There is a name engraved on it, Clair',
   },
@@ -499,7 +499,7 @@ export const idevices: Collectable[] = [
     name: 'iPod Mini - First Generation',
     boughtAt: 'Mar 9, 2019',
     hardware: '4GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference: 'http://www.apple-history.com/ipod_nano',
     notes:
       'I had another iPod Mini but the guy gave me this one I bought his third gen iPod. The battery is bad',
@@ -513,7 +513,7 @@ export const idevices: Collectable[] = [
     name: 'iPod Mini - Gray',
     boughtAt: 'Unknown',
     hardware: '4GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/ipod/specs/ipod_mini_2g.html',
     notes: 'To be added',
@@ -527,7 +527,7 @@ export const idevices: Collectable[] = [
     name: 'iPhone 4',
     boughtAt: 'Unknown',
     hardware: '16GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference: 'http://www.apple-history.com/ipod_touch',
     notes:
       'Got from my GF, it is running iOS 4.3.2. It does support iOS 7.1.2 but I want to keep with an old iOS. The power button is stuck',
@@ -541,7 +541,7 @@ export const idevices: Collectable[] = [
     name: 'iPhone 5S',
     boughtAt: 'Unknown',
     hardware: '16GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/iphone/specs/apple-iphone-5s-a1533-gsm-north-america-specs.html',
     notes: 'Got from my GF, broken display',
@@ -555,7 +555,7 @@ export const idevices: Collectable[] = [
     name: 'iPhone SE',
     boughtAt: 'Unknown',
     hardware: '32GB',
-    photo: 'images/iphone-5s.jpg',
+    photo: 'https://collection.leonardofaria.net/images/iphone-5s.jpg',
     reference:
       'https://everymac.com/systems/apple/iphone/specs/apple-iphone-se-a1662-united-states-att-tmobile-verizon-specs.html',
     notes: 'Got from my GF, broken display',
@@ -569,7 +569,7 @@ export const idevices: Collectable[] = [
     name: 'iPod Nano - 6th generation',
     boughtAt: 'Unknown',
     hardware: '8GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/ipod/specs/ipod-6th-generation-6g-multitouch-nano-specs.html',
     notes:
@@ -584,7 +584,7 @@ export const idevices: Collectable[] = [
     name: 'iPod Nano - 7th generation',
     boughtAt: 'Sep 30, 2019',
     hardware: '16GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/ipod/specs/ipod-nano-7th-generation-7g-2015-specs.html',
     notes:
@@ -599,7 +599,7 @@ export const idevices: Collectable[] = [
     name: 'iPad - Second Generation',
     boughtAt: 'Oct 2, 2019',
     hardware: '16GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/ipad/specs/apple-ipad-2-wi-fi-specs.html',
     notes: 'Another item that I got from my GF',
@@ -613,7 +613,8 @@ export const idevices: Collectable[] = [
     name: 'iPod Shuffle - 2nd generation',
     boughtAt: 'Jun 20, 2020',
     hardware: '2GB',
-    photo: 'images/ipod-shuffle-2nd-gen.jpg',
+    photo:
+      'https://collection.leonardofaria.net/images/ipod-shuffle-2nd-gen.jpg',
     reference:
       'https://everymac.com/systems/apple/ipod/specs/ipod-2nd-generation-shuffle-colors-late-2008-specs.html',
     notes:
@@ -628,7 +629,7 @@ export const idevices: Collectable[] = [
     name: 'iPhone 4 white',
     boughtAt: 'Jul 7, 2020',
     hardware: '8GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/iphone/specs/apple-iphone-4-specs.html',
     notes: 'test',
@@ -642,7 +643,7 @@ export const idevices: Collectable[] = [
     name: 'iPod nano - 3rd generation',
     boughtAt: 'Jul 10, 2020',
     hardware: '8GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/ipod/specs/ipod-3rd-generation-fat-nano-specs.html',
     notes: 'test',
@@ -656,7 +657,7 @@ export const idevices: Collectable[] = [
     name: 'iPod Shuffle - 3rd generation',
     boughtAt: 'Jul 10, 2020',
     hardware: '4GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/ipod/specs/ipod-3rd-generation-shuffle-3g-colors-late-2009-specs.html',
     notes: 'test',
@@ -670,7 +671,7 @@ export const idevices: Collectable[] = [
     name: 'iPod nano - 4th generation',
     boughtAt: 'Jul 12, 2020',
     hardware: '8GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/ipod/specs/ipod-4th-generation-4g-nano-specs.html',
     notes: 'test',
@@ -684,7 +685,7 @@ export const idevices: Collectable[] = [
     name: 'iPhone 5C',
     boughtAt: 'Dec 31, 2020',
     hardware: '8GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/iphone/specs/apple-iphone-5c-a1532-gsm-north-america-specs.html',
     notes: 'test',
@@ -698,7 +699,7 @@ export const idevices: Collectable[] = [
     name: 'iPhone 6',
     boughtAt: 'Dec 31, 2020',
     hardware: '16GB',
-    photo: 'images/not-found.jpeg',
+    photo: 'https://collection.leonardofaria.net/images/not-found.jpeg',
     reference:
       'https://everymac.com/systems/apple/iphone/specs/apple-iphone-6-a1549-4.7-inch-gsm-north-america-specs.html',
     notes: 'test',
