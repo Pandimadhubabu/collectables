@@ -13,7 +13,9 @@ const Button = ({ children, href, Icon, size }: Props) => {
     'inline-flex items-center justify-center w-auto text-base font-medium text-white bg-indigo-600 leading-6 rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out cursor-pointer';
 
   if (size === 'large') {
-    buttonClassNames += `mb-2 sm:mb-0 px-5 md:px-6 py-3 md:py-3 md:text-lg`;
+    buttonClassNames += ' mb-2 sm:mb-0 px-5 md:px-6 py-3 md:py-3 md:text-lg';
+  } else {
+    buttonClassNames += ' py-2 px-4';
   }
 
   return (

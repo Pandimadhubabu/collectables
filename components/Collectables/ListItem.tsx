@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
-import { MdArrowForward, MdMemory, MdDateRange } from 'react-icons/md';
 
 import { Collectable } from '../../interfaces';
 
@@ -10,49 +9,42 @@ type Props = {
 };
 
 const ListItem = ({ collectable }: Props) => (
-  <div className="w-full flex flex-col overflow-hidden bg-white border rounded shadow-sm md:flex-row sm:mx-auto mb-10">
-    <div className="w-full sm:w-80 md:w-96">
-      <img
-        alt={collectable.name}
-        className="aspect-w-16 aspect-h-9"
-        src={collectable.photo}
-      />
-    </div>
-    <div className="flex flex-col justify-center px-3 pt-3">
-      <h3 className="mb-2 text-2xl font-extrabold leading-none sm:text-2xl">
+  <div className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-5">
+    <div className="flex flex-col overflow-hidden bg-white border rounded-xl shadow-sm relative md:h-96">
+      <span className="inline-flex items-center justify-center rounded-md absolute right-2 top-2 z-20 text-white text-sm bg-gray-400 bg-opacity-70 py-1 px-3">
+        {collectable.boughtAt}
+      </span>
+
+      <div className="w-full overflow-hidden transition duration-150 ease-in-out transform md:scale-125 hover:scale-150 md:absolute md:top-0 z-10">
         <Link as={`/collectables/${collectable.id}`} href="/collectables/[id]">
-          {collectable.name}
+          <img
+            alt={collectable.name}
+            className="cursor-pointer"
+            src={collectable.photo}
+          />
         </Link>
-      </h3>
-      <header className="mb-3 flex text-gray-700 text-sm">
-        <span className="inline-flex items-center justify-center">
-          <MdMemory className="w-4 h-4 mr-1" /> {collectable.hardware}
-        </span>
-        <span className="inline-flex items-center justify-center ml-4">
-          <MdDateRange className="w-4 h-4 mr-1" /> {collectable.boughtAt}
-        </span>
-      </header>
-      <p className="mb-5 text-gray-800">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat qui
-        temporibus culpa quos voluptatem rem, tenetur inventore magnam amet
-        accusantium animi cum, eos natus, ullam deserunt praesentium quisquam
-        sunt soluta.
-      </p>
-      <footer className="bg-gray-200 grid grid-cols-2 -mx-3">
+      </div>
+
+      <div className="flex flex-grow flex-col justify-center p-5 md:absolute md:bottom-0 z-0">
         <a
-          className="inline-flex items-center justify-center p-2"
+          className="inline-flex items-center text-gray-700"
           href={collectable.reference}
         >
           History
-          <BsBoxArrowUpRight className="w-4 h-4 ml-2" />
+          <BsBoxArrowUpRight className="w-3 h-3 ml-1" />
         </a>
-        <Link as={`/collectables/${collectable.id}`} href="/collectables/[id]">
-          <span className="inline-flex items-center justify-center p-2 cursor-pointer">
-            Read more
-            <MdArrowForward className="w-4 h-4 ml-2" />
-          </span>
-        </Link>
-      </footer>
+        <h3 className="my-3 text-lg leading-none">
+          <Link
+            as={`/collectables/${collectable.id}`}
+            href="/collectables/[id]"
+          >
+            {collectable.name}
+          </Link>
+        </h3>
+        <footer className="inline-flex items-center text-sm text-gray-500">
+          {collectable.hardware}
+        </footer>
+      </div>
     </div>
   </div>
 );

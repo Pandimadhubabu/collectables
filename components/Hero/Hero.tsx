@@ -23,7 +23,7 @@ const Hero = ({ photo }: Props) => (
     <div className="w-full mx-auto mt-24 text-center md:w-10/12">
       <img
         alt="A random item of the collection"
-        className="w-full rounded-lg shadow-2xl"
+        className="w-full rounded-xl shadow-2xl"
         src={photo}
       />
     </div>
