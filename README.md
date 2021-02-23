@@ -11,4 +11,5 @@ A website showing the old computers / iDevices I own. I built one in the past bu
 🟨 Different collectables page style (ex: changelog style)
 🟨 Tests / CI
 🟨 Move data to Hasura
+🟨 PWA
 🟨 Charts (?)
