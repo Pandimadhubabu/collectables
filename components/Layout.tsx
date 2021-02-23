@@ -18,7 +18,7 @@ const Layout = ({ children, title = 'Collectables' }: Props) => (
       <meta content="initial-scale=1.0, width=device-width" name="viewport" />
     </Head>
 
-    <div className="h-screen flex flex-col overflow-auto">
+    <div className="h-screen flex flex-col overflow-auto bg-white dark:bg-black text-black dark:text-gray-200">
       <Nav />
 
       <main className="flex-grow">{children}</main>

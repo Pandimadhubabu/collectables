@@ -8,7 +8,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 bg-white dark:bg-black border-b z-50 bg-opacity-90">
+    <header className="sticky top-0 bg-white dark:bg-black border-b dark:border-gray-600 z-50 bg-opacity-90">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4 flex-wrap">
           <Link href="/">
@@ -30,7 +30,7 @@ const Header = () => {
           <nav
             aria-label="Main navigation"
             className={`${
-              isOpen ? 'fixed top-16 w-full bg-white ' : 'hidden'
+              isOpen ? 'fixed top-16 w-full bg-white dark:bg-black ' : 'hidden'
             } md:flex flex-grow border-t md:border-t-0 md:py-0 md:mt-0 md:ml-5`}
           >
             <ul className="flex flex-col md:flex-row flex-grow md:items-center">

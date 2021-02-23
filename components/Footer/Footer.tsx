@@ -1,7 +1,7 @@
 import { GrGithub, GrLinkedinOption, GrTwitter } from 'react-icons/gr';
 
 const Footer = () => (
-  <footer className="text-gray-600 body-font border-t">
+  <footer className="bg-white dark:bg-black text-gray-600 dark:text-gray-700 body-font border-t dark:border-gray-600">
     <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <span className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
         <svg
@@ -18,7 +18,7 @@ const Footer = () => (
         </svg>
         <span className="ml-3 text-xl">Collectables</span>
       </span>
-      <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+      <p className="text-sm text-gray-500 dark:text-gray-200 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:dark:border-gray-700 sm:py-2 sm:mt-0 mt-4">
         <a
           className="text-gray-600 ml-1"
           href="https://leonardofaria.net"
