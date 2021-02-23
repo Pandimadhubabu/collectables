@@ -1,3 +1,4 @@
+import ThemeChanger from '@components/ThemeChanger';
 import Link from 'next/link';
 import { useState } from 'react';
 import { MdMenu, MdLayers, MdLaptopMac, MdTabletMac } from 'react-icons/md';
@@ -7,7 +8,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 bg-white border-b z-50 bg-opacity-90">
+    <header className="sticky top-0 bg-white dark:bg-black border-b z-50 bg-opacity-90">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4 flex-wrap">
           <Link href="/">
@@ -51,6 +52,9 @@ const Header = () => {
               </li>
               <li className="mt-2 pt-4 border-t-2 md:mt-0 md:pt-0 md:border-t-0">
                 <Button href="/about">About</Button>
+              </li>
+              <li className="mt-2 pt-4 border-t-2 md:mt-0 md:pt-0 md:border-t-0">
+                <ThemeChanger />
               </li>
             </ul>
           </nav>

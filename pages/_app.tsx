@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { AppProps } from 'next/app';
+import { ThemeProvider } from 'next-themes';
 import { ApolloProvider } from '@apollo/client';
 import { useApollo } from '../lib/apolloClient';
 
@@ -8,9 +9,11 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
   const apolloClient = useApollo(pageProps.initialApolloState);
 
   return (
-    <ApolloProvider client={apolloClient}>
-      <Component {...pageProps} />
-    </ApolloProvider>
+    <ThemeProvider attribute="class">
+      <ApolloProvider client={apolloClient}>
+        <Component {...pageProps} />
+      </ApolloProvider>
+    </ThemeProvider>
   );
 };
 
