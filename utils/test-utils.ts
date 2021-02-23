@@ -1,8 +1,12 @@
-import { ReactNode } from 'react';
+import { FC, ReactElement } from 'react';
 import { render } from '@testing-library/react';
 // import { ThemeProvider } from "my-ui-lib"
 
-const Providers = ({ children }) => {
+type Props = {
+  children?: ReactElement;
+};
+
+const Providers: FC<Props> = ({ children }: ReactElement | any) => {
   return children;
   // return (
   //   <ThemeProvider theme="light">
@@ -11,7 +15,7 @@ const Providers = ({ children }) => {
   // )
 };
 
-const customRender = (ui: any, options = {}) =>
+const customRender = (ui: ReactElement, options = {}) =>
   render(ui, { wrapper: Providers, ...options });
 
 // re-export everything
