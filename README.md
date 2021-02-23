@@ -8,8 +8,10 @@ A website showing the old computers / iDevices I own. I built one in the past bu
 - 🟨 Themes (dark/light mode)
 - 🟨 Use Image component
 - 🟨 Open Graph data
+- 🟨 Animations
 - 🟨 Different collectables page style (ex: changelog style)
-- 🟨 Tests / CI
+- 🟨 Tests
+- 🟨 CI
 - 🟨 Move data to Hasura
 - 🟨 PWA
 - 🟨 Charts (?)
