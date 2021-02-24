@@ -11,7 +11,7 @@
     "test:watch": "jest --watch",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
     "type-check": "tsc",
-    "validate": "yarn type-check && yarn test"
+    "validate": "yarn type-check && yarn test:coverage"
   },
   "dependencies": {
     "@apollo/client": "^3.3.9",
