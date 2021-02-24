@@ -1,7 +1,8 @@
+import Logo from '@components/Logo';
 import ThemeChanger from '@components/ThemeChanger';
 import Link from 'next/link';
 import { useState } from 'react';
-import { MdMenu, MdLayers, MdLaptopMac, MdTabletMac } from 'react-icons/md';
+import { MdMenu, MdLaptopMac, MdTabletMac } from 'react-icons/md';
 import Button from '../Button';
 
 const Header = () => {
@@ -11,12 +12,7 @@ const Header = () => {
     <header className="sticky top-0 bg-white dark:bg-black border-b dark:border-gray-600 z-50 bg-opacity-90">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4 flex-wrap">
-          <Link href="/">
-            <span className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 cursor-pointer">
-              <MdLayers className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" />
-              <span className="ml-3 text-xl">Collectables</span>
-            </span>
-          </Link>
+          <Logo />
 
           <button
             aria-label="Show mobile menu"
