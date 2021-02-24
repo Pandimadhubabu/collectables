@@ -5,8 +5,8 @@ A website showing the old computers / iDevices I own. I built one in the past bu
 ## Roadmap aka todo
 
 - ✅ TS support
-- 🟨 Themes (dark/light mode)
-- 🟨 Use Image component
+- ✅ Themes (dark/light mode)
+- 🟨 Use Image component (with Cloudinary)
 - 🟨 Open Graph data
 - 🟨 Animations
 - 🟨 Different collectables page style (ex: changelog style)
