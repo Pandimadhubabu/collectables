@@ -27,7 +27,7 @@ const ListItem = ({ collectable }: Props) => (
 
       <div className="flex flex-grow flex-col justify-center p-5 md:absolute md:bottom-0 z-0">
         <a
-          className="inline-flex items-center text-gray-700"
+          className="inline-flex items-center text-gray-700 dark:text-gray-100"
           href={collectable.reference}
         >
           History
