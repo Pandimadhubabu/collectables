@@ -15,8 +15,8 @@ A website showing the old computers / iDevices I own. I built one in the past bu
 - ✅ TS support
 - ✅ Themes (dark/light mode)
 - ✅ CI
+- ✅ Use Image component (with Cloudinary)
 - 🟨 Tests
-- 🟨 Use Image component (with Cloudinary)
 - 🟨 Open Graph data
 - 🟨 Animations
 - 🟨 Different collectables page style (ex: changelog style)
