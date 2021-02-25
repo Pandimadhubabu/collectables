@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 import { Collectable } from '../../interfaces';
 
@@ -9,10 +10,13 @@ const Single = ({ item: collectable }: CollectableProps) => (
   <section className="max-w-2xl lg:max-w-6xl mx-auto my-20">
     <div className="flex flex-col lg:flex-row -mx-4">
       <div className="lg:w-1/2 mx-6">
-        <img
+        <Image
           alt={collectable.name}
           className="w-full md:mb-6 md:rounded-xl shadow-sm"
+          height="480"
+          layout="responsive"
           src={collectable.photo}
+          width="640"
         />
       </div>
       <div className="lg:w-1/2 mx-6 p-4 md:p-0">

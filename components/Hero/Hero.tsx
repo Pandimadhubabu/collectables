@@ -1,8 +1,9 @@
+import Image from 'next/image';
 import { MdArrowForward } from 'react-icons/md';
 import Button from '../Button';
 
 type Props = {
-  photo?: string;
+  photo: string;
 };
 
 const Hero = ({ photo }: Props) => (
@@ -21,10 +22,13 @@ const Hero = ({ photo }: Props) => (
       </div>
     </div>
     <div className="w-full mx-auto mt-24 text-center md:w-10/12">
-      <img
+      <Image
         alt="A random item of the collection"
         className="w-full rounded-xl shadow-2xl"
+        height="480"
+        layout="responsive"
         src={photo}
+        width="640"
       />
     </div>
   </section>

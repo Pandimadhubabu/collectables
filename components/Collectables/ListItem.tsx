@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
 
 import { Collectable } from '../../interfaces';
@@ -17,10 +18,13 @@ const ListItem = ({ collectable }: Props) => (
 
       <div className="w-full overflow-hidden transition duration-150 ease-in-out transform md:scale-125 hover:scale-150 md:absolute md:top-0 z-10">
         <Link as={`/collectables/${collectable.id}`} href="/collectables/[id]">
-          <img
+          <Image
             alt={collectable.name}
             className="cursor-pointer"
+            height="480"
+            layout="responsive"
             src={collectable.photo}
+            width="640"
           />
         </Link>
       </div>
