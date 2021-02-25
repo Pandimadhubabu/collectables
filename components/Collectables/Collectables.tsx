@@ -14,7 +14,7 @@ const Collectables = ({ items, categoryName }: Props) => (
       </h1>
     </header>
 
-    <div className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-700 to-gray-800 py-20">
+    <div className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 py-20">
       <div className="max-w-2xl lg:max-w-5xl mx-auto">
         <div className="flex flex-wrap -mx-2">
           {items.map((item) => (
