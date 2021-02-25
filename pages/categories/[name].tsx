@@ -1,5 +1,5 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
-
+import { categoryCapitalizer } from '@utils/string';
 import { Collectable } from '../../interfaces';
 import { categories, collectables } from '../../utils/sample-data';
 import Layout from '../../components/Layout';
@@ -14,7 +14,7 @@ type Props = {
 const StaticPropsDetail = ({ items, categoryName, errors }: Props) => {
   if (errors) {
     return (
-      <Layout title="Error | Next.js + TypeScript Example">
+      <Layout title="Error">
         <p>
           <span style={{ color: 'red' }}>Error:</span> {errors}
         </p>
@@ -22,9 +22,11 @@ const StaticPropsDetail = ({ items, categoryName, errors }: Props) => {
     );
   }
 
+  const formattedCategoryName = categoryCapitalizer(`${categoryName}s`);
+
   return (
-    <Layout title="Collectables list">
-      <Collectables categoryName={categoryName} items={items} />
+    <Layout title={formattedCategoryName}>
+      <Collectables categoryName={formattedCategoryName} items={items} />
     </Layout>
   );
 };

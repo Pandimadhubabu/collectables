@@ -10,7 +10,7 @@ type Props = {
 };
 
 const WithStaticProps = ({ items }: Props) => (
-  <Layout title="Collectables list">
+  <Layout title="All collectables">
     <Collectables items={items} />
   </Layout>
 );
