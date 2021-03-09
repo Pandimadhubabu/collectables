@@ -19,13 +19,13 @@ const Footer = () => (
           className="ml-3 text-gray-500"
           href="https://github.com/leonardofaria/collectables"
         >
-          <GrGithub className="w-5 h-5" />
+          <GrGithub className="w-5 h-5" title="GitHub" />
         </a>
         <a className="ml-3 text-gray-500" href="https://twitter.com/leozera">
-          <GrTwitter className="w-5 h-5" />
+          <GrTwitter className="w-5 h-5" title="Twitter" />
         </a>
         <a className="ml-3 text-gray-500" href="https://linkedin.com">
-          <GrLinkedinOption className="w-5 h-5" />
+          <GrLinkedinOption className="w-5 h-5" title="Linkedin" />
         </a>
       </span>
     </div>

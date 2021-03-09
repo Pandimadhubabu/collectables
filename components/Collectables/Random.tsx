@@ -36,9 +36,9 @@ const Random = ({ collectable }: Props) => {
                 Random collectable
               </p>
             </div>
-            <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
+            <h2 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
               {collectable.name}
-            </h5>
+            </h2>
             <p className="mb-5 text-gray-800 dark:text-gray-500">
               {collectable.notes}
             </p>

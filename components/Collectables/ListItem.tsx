@@ -12,7 +12,7 @@ type Props = {
 const ListItem = ({ collectable }: Props) => (
   <div className="w-full sm:w-1/2 lg:w-1/3 px-3 mb-5">
     <div className="flex flex-col overflow-hidden bg-white dark:bg-gray-900 border dark:border-gray-600 rounded-xl shadow-sm relative md:h-96">
-      <span className="inline-flex items-center justify-center rounded-md absolute right-2 top-2 z-20 text-white text-sm bg-gray-400 bg-opacity-70 py-1 px-3">
+      <span className="inline-flex items-center justify-center rounded-md absolute right-2 top-2 z-20 text-white text-sm bg-gray-700 bg-opacity-95 py-1 px-3">
         {collectable.boughtAt}
       </span>
 
@@ -37,14 +37,14 @@ const ListItem = ({ collectable }: Props) => (
           History
           <BsBoxArrowUpRight className="w-3 h-3 ml-1" />
         </a>
-        <h3 className="my-3 text-lg leading-none">
+        <h2 className="my-3 text-lg leading-none">
           <Link
             as={`/collectables/${collectable.id}`}
             href="/collectables/[id]"
           >
             {collectable.name}
           </Link>
-        </h3>
+        </h2>
         <footer className="inline-flex items-center text-sm text-gray-500">
           {collectable.hardware}
         </footer>

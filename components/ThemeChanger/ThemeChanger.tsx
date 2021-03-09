@@ -15,6 +15,7 @@ const ThemeChanger = () => {
 
   return (
     <button
+      aria-label="Change colour theme"
       className={buttonClassNames}
       type="button"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
