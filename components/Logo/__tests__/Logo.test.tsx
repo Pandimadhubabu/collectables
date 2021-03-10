@@ -1,4 +1,5 @@
-import { render } from '@utils/test-utils';
+import { axe } from 'jest-axe';
+import { render, act } from '@utils/test-utils';
 import Logo from '../Logo';
 
 describe('Logo', () => {
@@ -30,5 +31,13 @@ describe('Logo', () => {
         </span>
       </span>
     `);
+  });
+
+  it('should be accessibule', async () => {
+    const { container } = render(<Logo />);
+
+    await act(async () => {
+      expect(await axe(container)).toHaveNoViolations();
+    });
   });
 });
